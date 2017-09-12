@@ -11,8 +11,9 @@
 }
 .nav a
 {
+
     font-size: 28px;
-    margin: 0px 75px;
+    margin: 20px 75px;
     padding: 0px;
     color: $fontColor;
 }
@@ -36,10 +37,23 @@ nav .active
 {
     width: 200px;
     height: 200px;
+
+}
+#portfolioProjects, #home-about
+{
+    height: 100vh;
 }
 .pagination-centered
 {
     text-align: center;
     margin-top: 25vh;
+}
+h1
+{
+    text-align: center;
+}
+.projects img
+{
+    width: 45vh;
 }
 
