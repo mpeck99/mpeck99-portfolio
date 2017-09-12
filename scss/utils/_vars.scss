@@ -2,3 +2,27 @@ $main: #36413e;
 $fontColor: #e1e1e4;
 $secondaryColor: #19c2bc;
 $thirdColor: #d06868;
+
+@mixin navFont{
+    font-family: 'Bungee', cursive;
+}
+@mixin secondFont($family, $weight, $size){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+}
+@font-face {
+       font-family: 'Bungee, cursive';
+       src: local('Bungee, cursive'),
+       url("https://fonts.googleapis.com/css?family=Bungee");
+   }
+@font-face {
+       font-family: 'Montserrat, sans-serif';
+       src: url('https://fonts.googleapis.com/css?family=Montserrat');
+   }
+   @keyframes downbounce {
+    0%, 100% {transform: translateY(0);}
+    20%,  80% {transform: translateY(-30px);}
+   40%,60% {transform: translateY(0px);}
+
+} 

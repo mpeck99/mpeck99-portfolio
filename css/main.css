@@ -1,15 +1,35 @@
+@font-face {
+  font-family: 'Bungee, cursive';
+  src: local("Bungee, cursive"), url("https://fonts.googleapis.com/css?family=Bungee"); }
+
+@font-face {
+  font-family: 'Montserrat, sans-serif';
+  src: url("https://fonts.googleapis.com/css?family=Montserrat"); }
+
+@keyframes downbounce {
+  0%, 100% {
+    transform: translateY(0); }
+  20%, 80% {
+    transform: translateY(-30px); }
+  40%, 60% {
+    transform: translateY(0px); } }
+
 .body {
   background-color: #36413e;
-  color: #e1e1e4; }
+  color: #e1e1e4;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px; }
 
 .img-circle {
   border-radius: 50%;
-  width: 200px;
-  height: 200px; }
+  width: 400px;
+  height: 400px; }
 
 .nav a {
+  font-family: 'Bungee', cursive;
   font-size: 28px;
-  margin: 20px 75px;
+  margin: 20px 50px;
   padding: 0px;
   color: #e1e1e4; }
 
@@ -23,11 +43,22 @@ nav .active {
 .footer {
   text-align: center;
   background-color: #19c2bc;
-  color: #36413e; }
+  color: #36413e;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px; }
+  .footer p {
+    margin: 0px;
+    padding: 0px; }
 
 .downArrow {
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  margin-top: 10px;
+  animation-name: downbounce;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
 
 #portfolioProjects, #home-about {
   height: 100vh; }
