@@ -1,8 +1,45 @@
-.img-circle
+@import 'utils/vars';
+.body
+{
+    background-color: $main;
+    color: $fontColor;
+}.img-circle
 {
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 .nav a
 {
-    margin: 0px 50px;
+    font-size: 28px;
+    margin: 0px 75px;
+    padding: 0px;
+    color: $fontColor;
 }
+.nav a:hover
+{
+    text-decoration: none;
+    color: $secondaryColor;
+}
+nav .active
+{
+    color: $thirdColor;
+}
+.footer
+{
+    text-align: center;
+    background-color: $secondaryColor;
+    color: $main;
+
+}
+.downArrow
+{
+    width: 200px;
+    height: 200px;
+}
+.pagination-centered
+{
+    text-align: center;
+    margin-top: 25vh;
+}
+
