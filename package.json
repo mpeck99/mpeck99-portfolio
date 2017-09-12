@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is a repo for my own personal portfolio website.  This site will display all of my personal projects as well as information about me. You will also be given information on how to contact me if you need to.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpeck99/Portfolio.git"
+  },
+  "author": "Morgan Peck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpeck99/Portfolio/issues"
+  },
+  "homepage": "https://github.com/mpeck99/Portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-sass": "^3.1.0"
+  }
+}
