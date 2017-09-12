@@ -11,6 +11,9 @@ $thirdColor: #d06868;
     font-weight: $weight;
     font-size: $size;
 }
+@mixin borderRad($radius){
+    border-radius: $radius;
+}
 @font-face {
        font-family: 'Bungee, cursive';
        src: local('Bungee, cursive'),

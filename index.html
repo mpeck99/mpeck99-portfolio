@@ -9,36 +9,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body class="body">   
-<div class="container">
-
-<header class="header" style="height: 100vh;">
-    <nav class="nav justify-content-center">
+<div class="container-fluid">
+    
+<header class="header">
+   <div class="container-fluid">
+        <nav class="nav justify-content-center">
         <a class="active" href="index.html">Home</a>
         <a href="mywork.html">Portfolio</a>
         <a href="about.html">About Me</a>
         <a href="contact.html">Contact Me</a>
     </nav>
+    </div> 
     <div class="pagination-centered">
-    <img src="assets/logo.png" alt='logo' id='mp' >
-    <h3>Future Web Developer--Full Sail Student</h3>
-    <img src="assets/downArrows.svg" class="downArrow">
+        <img src="assets/logo.png" alt='logo' id='mp' >
+        <div class="row">
+            <div class="col-4"><img class="socialMedia" src="assets/github.svg" alt="github"></div>
+            <div class="col-4"><img class="socialMedia" src="assets/facebook.png" alt="facebook"></div>
+            <div class="col-4"><img class="socialMedia" src="assets/linkedin.png" alt="linkedIn"></div>
+        </div>
+        <h3>Future Web Developer--Full Sail Student</h3>
+        <img src="assets/downArrows.svg" class="downArrow">
     </div>
 </header>
 
-<section class="content" id="portfolioProjects">
+<section class="container-fluid" id="portfolioProjects">
     <h1>Portfolio</h1>
-    
-    <article >
-        <img src="assets/kittens1.png" alt="ResponsiveImageGallery">
-    </article>
-    
-    
+        <div class="row">
+            <article class="col-4" >
+                <img src="assets/imageGallery.jpg" alt="Responsive Image Gallery" id="projectImg">
+                <h2>Responsive Image Gallery</h2>
+            </article> 
+            <article class="col-4" >
+                <img src="assets/responsiveForm.jpg" alt="Responsive Form" id="projectImg">
+                <h2>Responsive Form</h2>
+            </article> 
+            <article class="col-4" >
+                <img src="assets/movieSearch.jpg" alt="Movie Search" id="projectImg">
+                <h2>Movie Search</h2>
+            </article> 
+   </row>
+   <a href="mywork.html">More Work</a>
 </section>
 
-<section class="content" id="home-about">
+<section class="container" id="home-about">
     <h1>About Me</h1>
-    <img src="assets/portfolioIMg.png" class="img-circle" alt="portfolioPicture" >
-    <p>Hello, My name is Morgan Peck. I currently am a student at Full Sail University majoring in Web Design and Development. I live near Little Rock, Arkansas with my husband and my two cats. I love developing websites and bringing something to users that they will enjoy. I have experience in both front and back end development but I prefer dealing with the backend. I enjoy problem-solving and building things for people to enjoy. My hobbies are photography and photoshop/illustrator.</p>
+    <div class="row">
+        <div class="col">
+            <img src="assets/portfolioIMg.png" class="img-circle" alt="portfolioPicture" ></div>
+    <div class="col">  <p>Hello, My name is Morgan Peck. I currently am a student at Full Sail University majoring in Web Design and Development. I live near Little Rock, Arkansas with my husband and my two cats. I love developing websites and bringing something to users that they will enjoy. I have experience in both front and back end development but I prefer dealing with the backend. I enjoy problem-solving and building things for people to enjoy. My hobbies are photography and photoshop/illustrator.</p></div>
+  
+    </row>
 </section>
 
 </div>
@@ -46,9 +66,9 @@
     <p>Morgan Peck</p>
     <p>mlpeck@fullsail.edu</p>
 </footer>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 </body>
 </html>

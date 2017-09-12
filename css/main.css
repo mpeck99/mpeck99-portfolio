@@ -35,7 +35,8 @@
 
 .nav a:hover {
   text-decoration: none;
-  color: #19c2bc; }
+  color: #19c2bc;
+  transform: translateY(-10px); }
 
 nav .active {
   color: #d06868; }
@@ -51,10 +52,12 @@ nav .active {
     margin: 0px;
     padding: 0px; }
 
+.header {
+  height: 100vh; }
+
 .downArrow {
   width: 200px;
   height: 200px;
-  margin-top: 10px;
   animation-name: downbounce;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -65,10 +68,54 @@ nav .active {
 
 .pagination-centered {
   text-align: center;
-  margin-top: 25vh; }
+  margin-top: 20vh; }
 
-h1 {
+#portfolioProjects h1, #home-about h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  font-family: "Bungee";
+  font-weight: 400;
+  font-size: 48px; }
+
+#portfolioProjects {
+  background-color: #d06868;
+  width: 100%; }
+
+#projectImg {
+  height: 300px;
+  border-radius: 15px; }
+
+#portfolioProjects a {
+  margin: 0 auto;
+  height: 75px;
+  padding: 10px;
+  margin-top: 100px;
+  font-family: "Bungee";
+  font-weight: 400;
+  font-size: 34px;
+  border-radius: 15px;
+  color: #36413e;
+  background-color: #19c2bc;
+  text-decoration: none; }
+
+h2 {
   text-align: center; }
 
-.projects img {
-  width: 45vh; }
+#portfolioProjects a:hover {
+  background-color: #36413e;
+  color: #19c2bc;
+  text-decoration: none; }
+
+.container {
+  margin-bottom: 50px; }
+
+#home-about p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-left: 0px; }
+
+.socialMedia {
+  width: 50px; }

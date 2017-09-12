@@ -1,72 +1,109 @@
 @import 'utils/vars';
 
-.body
-{
+.body{
     background-color: $main;
     color: $fontColor;  
     @include secondFont('Montserrat', 400, 18px );
-}.img-circle
-{
+}
+.img-circle{
     border-radius: 50%;
     width: 400px;
     height: 400px;
 }
-.nav a
-{
+.nav a{
     @include navFont;
     font-size: 28px;
     margin: 20px 50px;
     padding: 0px;
     color: $fontColor;
 }
-.nav a:hover
-{
+.nav a:hover{
     text-decoration: none;
     color: $secondaryColor;
+      transform: translateY(-10px);
+   
 }
-nav .active
-{
+nav .active{
     color: $thirdColor;
+  
 }
-.footer
-{
+.footer{
     text-align: center;
     background-color: $secondaryColor;
     color: $main;
     @include secondFont('Montserrat', 400, 16px );
-    p
-    {
+    p{
         margin: 0px;
         padding: 0px;
     }
 }
-
-.downArrow
-{
+.header{
+    height: 100vh;
+}
+.downArrow{
     width: 200px;
     height: 200px;
-    margin-top: 10px;
+    //margin-top: 50px;
     animation-name: downbounce;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-#portfolioProjects, #home-about
-{
+#portfolioProjects, #home-about{
     height: 100vh;
+   
 }
-.pagination-centered
-{
+.pagination-centered{
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 20vh;
 }
-h1
-{
+#portfolioProjects h1, #home-about h1{
     text-align: center;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    @include secondFont('Bungee', 400, 48px);
 }
-.projects img
+#portfolioProjects
 {
-    width: 45vh;
+    background-color: $thirdColor;
+    width: 100%;
+    
+}
+#projectImg{
+    height: 300px;
+    @include borderRad(15px);
+}
+#portfolioProjects a{
+    margin: 0 auto;
+    height: 75px;
+    padding: 10px;
+    margin-top: 100px;
+    @include secondFont('Bungee', 400, 34px);
+    @include borderRad(15px);
+    color: $main;
+    background-color: $secondaryColor;
+    text-decoration: none;
+}
+h2{
+    text-align: center;
+
 }
 
+#portfolioProjects a:hover{
+background-color: $main;
+color: $secondaryColor;
+text-decoration: none;
+
+}
+.container{
+    margin-bottom: 50px;
+}
+#home-about p{
+@include secondFont('Montserrat', 400,22px);
+margin-top: 20px;
+margin-left: 0px;
+}
+.socialMedia{
+width: 50px;
+}
