@@ -118,4 +118,8 @@ h2 {
   margin-left: 0px; }
 
 .socialMedia {
-  width: 50px; }
+  width: 50px;
+  margin-bottom: 25px; }
+
+.socialMedia:hover {
+  transform: translateY(-20px); }
