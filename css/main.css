@@ -52,6 +52,9 @@ nav .active {
     margin: 0px;
     padding: 0px; }
 
+#portfolioHeader {
+  height: 50vh; }
+
 .header {
   height: 100vh; }
 
@@ -70,6 +73,9 @@ nav .active {
   text-align: center;
   margin-top: 20vh; }
 
+.logo {
+  margin: 50px; }
+
 #portfolioProjects h1, #home-about h1 {
   text-align: center;
   margin-bottom: 100px;
@@ -82,9 +88,9 @@ nav .active {
   background-color: #d06868;
   width: 100%; }
 
-#projectImg {
+.projectImg {
   height: 300px;
-  border-radius: 15px; }
+  border-radius: 10px; }
 
 #portfolioProjects a {
   margin: 0 auto;
@@ -99,7 +105,7 @@ nav .active {
   background-color: #19c2bc;
   text-decoration: none; }
 
-h2 {
+#portfolioProjects h2 {
   text-align: center; }
 
 #portfolioProjects a:hover {
@@ -125,6 +131,28 @@ h2 {
   animation-name: spin;
   animation-duration: 1s;
   animation-timing-function: ease-in-out; }
+
+.workTitle {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.pagination-centered h3 {
+  font-size: 42px;
+  margin-top: 10px; }
+
+.repoLink {
+  text-decoration: none;
+  font-style: italic;
+  color: #d06868; }
+
+.repoLink:visited {
+  text-decoration: none;
+  color: #d06868; }
+
+#myProjects p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px; }
 
 @keyframes spin {
   from {

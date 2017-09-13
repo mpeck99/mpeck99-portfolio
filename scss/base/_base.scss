@@ -20,8 +20,8 @@
 .nav a:hover{
     text-decoration: none;
     color: $secondaryColor;
-      transform: translateY(-10px);
-   
+    transform: translateY(-10px);
+
 }
 nav .active{
     color: $thirdColor;
@@ -36,6 +36,9 @@ nav .active{
         margin: 0px;
         padding: 0px;
     }
+}
+#portfolioHeader{
+    height: 50vh;
 }
 .header{
     height: 100vh;
@@ -58,6 +61,9 @@ nav .active{
     text-align: center;
     margin-top: 20vh;
 }
+.logo{
+    margin: 50px;
+}
 #portfolioProjects h1, #home-about h1{
     text-align: center;
     margin-bottom: 100px;
@@ -70,9 +76,9 @@ nav .active{
     width: 100%;
     
 }
-#projectImg{
+.projectImg{
     height: 300px;
-    @include borderRad(15px);
+    @include borderRad(10px);
 }
 #portfolioProjects a{
     margin: 0 auto;
@@ -85,7 +91,7 @@ nav .active{
     background-color: $secondaryColor;
     text-decoration: none;
 }
-h2{
+#portfolioProjects h2{
     text-align: center;
 
 }
@@ -114,6 +120,27 @@ margin-bottom: 25px;
     animation-timing-function: ease-in-out;
 }
 
+
+.workTitle{
+text-align: center;
+margin-bottom: 30px;
+}
+.pagination-centered h3{
+    font-size: 42px;
+    margin-top: 10px;
+}
+.repoLink{
+    text-decoration: none;
+    font-style: italic;
+    color: $thirdColor;
+}
+.repoLink:visited{
+    text-decoration: none;
+    color: $thirdColor;
+}
+#myProjects p{
+ @include secondFont('Montserrat', 400, 18px);   
+}
 @keyframes spin{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
