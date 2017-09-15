@@ -1,147 +1,260 @@
 @import 'utils/vars';
 
-.body{
-    background-color: $main;
-    color: $fontColor;  
-    @include secondFont('Montserrat', 400, 18px );
-}
-.img-circle{
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-}
-.nav a{
-    @include navFont;
-    font-size: 28px;
-    margin: 20px 50px;
-    padding: 0px;
-    color: $fontColor;
-}
-.nav a:hover{
-    text-decoration: none;
-    color: $secondaryColor;
-    transform: translateY(-10px);
 
-}
-nav .active{
-    color: $thirdColor;
-  
-}
-footer{
-    text-align: center;
-    background-color: $secondaryColor;
-    color: $main;
-    @include secondFont('Montserrat', 400, 16px );
-    p{
-        margin: 0px;
-        padding: 0px;
-    }
-}
-#portfolioHeader{
-    height: 50vh;
-}
-.header{
-    height: 100vh;
-}
-.downArrow{
-    width: 200px;
-    height: 200px;
-    //margin-top: 50px;
-    animation-name: downbounce;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-#portfolioProjects, #home-about{
-    height: 100vh;
-   
-}
-.pagination-centered{
-    text-align: center;
-    margin-top: 20vh;
-}
-.logo{
-    margin: 50px;
-}
-#portfolioProjects h1, #home-about h1{
-    text-align: center;
-    margin-bottom: 100px;
-    padding-top: 100px;
-    @include secondFont('Bungee', 400, 48px);
-}
-#portfolioProjects
-{
-    background-color: $thirdColor;
-    width: 100%;
-    
-}
-.projectImg{
-    height: 300px;
-    @include borderRad(10px);
-}
-#portfolioProjects a{
-    margin: 0 auto;
-    height: 75px;
-    padding: 10px;
-    margin-top: 100px;
-    @include secondFont('Bungee', 400, 34px);
-    @include borderRad(15px);
-    color: $main;
-    background-color: $secondaryColor;
-    text-decoration: none;
-}
-#portfolioProjects h2{
-    text-align: center;
-
-}
-
-#portfolioProjects a:hover{
-background-color: $main;
-color: $secondaryColor;
-text-decoration: none;
-
-}
-.container{
-    margin-bottom: 50px;
-}
-#home-about p{
-@include secondFont('Montserrat', 400,26px);
-margin-top: 20px;
-margin-left: 0px;
-}
-.socialMedia{
-width: 50px;
-margin-bottom: 25px;
-}
-.socialMedia:hover{
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-
-.workTitle{
-text-align: center;
-margin-bottom: 30px;
-}
-.pagination-centered h3{
-    font-size: 42px;
-    margin-top: 10px;
-}
-.repoLink{
-    text-decoration: none;
-    font-style: italic;
-    color: $thirdColor;
-}
-.repoLink:visited{
-    text-decoration: none;
-    color: $thirdColor;
-}
-#myProjects p{
- @include secondFont('Montserrat', 400, 18px);   
-}
 @keyframes spin{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
+}
+@media only screen and (min-width: 320px) {
+
+    #mp{
+        width: 300px;
+    }
+    .myquote, .socialMedia, .downArrow{
+        visibility: hidden;
+    }
+    .socialMedia{
+        visibility: hidden;
+    }
+    nav a{
+        visibility: hidden;
+    }
+    button{
+        float: right;
+        background-color: transparent;
+        border: none;
+    }
+   #portfolioProjects h1, #home-about h1{
+        font-size: 18px;
+    }
+    #portfolioProjects h2{
+        font-size: 16px;
+    }
+    .img-circle{
+        height: 250px;
+        width: 250px;
+        align-items: center;
+        
+    }
+    #portfolioProjects a{
+        height: 25px;
+        margin: 0 auto;
+
+        font-size: 12px;
+        text-align: center;
+        padding: 4px;
+    }
+   .hamburgerMenu{
+       visibility: visible;
+   }
+   #portfolioProjects {
+        margin-bottom: 75px;
+    }
+    .projectImg{
+        height: 100px;
+        @include borderRad(10px);
+    }
+    .img-circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .body{
+        background-color: $main;
+        color: $fontColor;  
+        @include secondFont('Montserrat', 400, 18px );
+    }
+    #portfolioProjects{
+        background-color: $thirdColor;
+        width: 100%;
+        
+    }
+    #aboutHeader h3, #about h1 {
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width:428px) {
+    
+    
+}
+@media only screen and (min-width: 768px) {
+   
+}
+@media only screen and (min-width: 992px){
+     .myquote, .socialMedia,.downArrow, .nav a{
+        visibility: visible;
+    }
+    .hamburgerMenu{
+       visibility: hidden;
+   }
+    .socialMedia{
+    width: 50px;
+    margin-bottom: 25px;
+    }
+    
+    .socialMedia:hover{
+        animation-name: spin;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+    .nav a{
+        @include navFont;
+        font-size: 28px;
+        margin: 10px 50px;
+        padding: 0px;
+        color: $fontColor;
+    }
+    
+    .nav a:hover{
+        text-decoration: none;
+        color: $secondaryColor;
+        transform: translateY(-10px);
+    }
+    .img-circle{
+        width: 400px;
+        height: 400px;
+    }
+    #mp{
+        width: 500px;
+    }
+
+    #portfolioProjects a{
+        margin: 0 auto;
+        height: 75px;
+        padding: 10px;
+
+        @include secondFont('Bungee', 400, 34px);
+        @include borderRad(15px);
+        color: $main;
+        background-color: $secondaryColor;
+        text-decoration: none;
+    }
+    #portfolioProjects{
+        margin: 10px;
+    }
+    #portfolioProjects h1, #home-about h1{
+        margin-bottom: 100px;
+        padding-top: 100px;
+        @include secondFont('Bungee', 400, 48px);
+    }
+    .projectImg{
+        height: 300px;
+
+    }
+    .body{
+        background-color: $main;
+        color: $fontColor;  
+        @include secondFont('Montserrat', 400, 18px );
+    }
+    
+    nav .active{
+        color: $thirdColor;
+      
+    }
+    
+    footer{
+        text-align: center;
+        background-color: $secondaryColor;
+        color: $main;
+        @include secondFont('Montserrat', 400, 16px );
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+ 
+    #portfolioHeader{
+        height: 50vh;
+    }
+    
+    .header{
+        height: 100vh;
+    }
+    
+    .downArrow{
+        width: 200px;
+        height: 200px;
+        //margin-top: 50px;
+        animation-name: downbounce;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    #portfolioProjects, #home-about{
+        height: 100vh;
+       
+    }
+    
+    .logo{
+        text-align: center;
+        margin-top: 20vh;
+    }
+  
+    #portfolioProjects h1, #home-about h1{
+        text-align: center;
+        margin-bottom: 100px;
+        padding-top: 100px;
+        @include secondFont('Bungee', 400, 48px);
+    }
+    
+    
+    .nav{
+        text-align: center;
+    }
+    
+    
+    #portfolioProjects a{
+        margin: 0 auto;
+        height: 75px;
+        padding: 10px;
+        margin-top: 100px;
+        @include secondFont('Bungee', 400, 34px);
+        @include borderRad(15px);
+        color: $main;
+        background-color: $secondaryColor;
+        text-decoration: none;
+    }
+    
+    #portfolioProjects h2{
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    #portfolioProjects a:hover{
+    background-color: $main;
+    color: $secondaryColor;
+    text-decoration: none;
+    
+    }
+    #aboutHeader{
+        height: 50vh;
+       
+    }
+    #home-about p{
+    @include secondFont('Montserrat', 400,26px);
+    margin-top: 20px;
+    margin-left: 0px;
+    }
+    .workTitle{
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    .pagination-centered h3{
+        font-size: 42px;
+        margin-top: 10px;
+    }
+    .repoLink{
+        text-decoration: none;
+        font-style: italic;
+        color: $thirdColor;
+    }
+    .repoLink:visited{
+        text-decoration: none;
+        color: $thirdColor;
+    }
+    #myProjects p{
+     @include secondFont('Montserrat', 400, 18px);   
+    }
 }
