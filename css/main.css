@@ -10,7 +10,7 @@
   0%, 100% {
     transform: translateY(0); }
   20%, 80% {
-    transform: translateY(-30px); }
+    transform: translateY(-15px); }
   40%, 60% {
     transform: translateY(0px); } }
 
@@ -144,9 +144,9 @@
     width: 200px;
     height: 200px;
     animation-name: downbounce;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; }
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; }
   #portfolioProjects, #home-about {
     height: 100vh; }
   .logo {

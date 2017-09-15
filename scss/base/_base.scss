@@ -177,9 +177,9 @@
         height: 200px;
         //margin-top: 50px;
         animation-name: downbounce;
-        animation-duration: 10s;
+        animation-duration: 3s;
+        animation-timing-function: ease;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
     }
     
     #portfolioProjects, #home-about{
