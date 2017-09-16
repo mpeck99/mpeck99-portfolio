@@ -71,6 +71,8 @@
     text-align: center; } }
 
 @media only screen and (min-width: 992px) {
+  .email, .phone {
+    width: 50px; }
   .myquote, .socialMedia, .downArrow, .nav a {
     visibility: visible; }
   .hamburgerMenu {
@@ -117,7 +119,7 @@
     font-weight: 400;
     font-size: 48px; }
   .projectImg {
-    height: 300px; }
+    height: 320px; }
   .body {
     background-color: #36413e;
     color: #e1e1e4;

@@ -82,6 +82,9 @@
    
 }
 @media only screen and (min-width: 992px){
+    .email,.phone{
+        width: 50px;
+    }
      .myquote, .socialMedia,.downArrow, .nav a{
         visibility: visible;
     }
@@ -139,8 +142,7 @@
         @include secondFont('Bungee', 400, 48px);
     }
     .projectImg{
-        height: 300px;
-
+        height: 320px;
     }
     .body{
         background-color: $main;
@@ -152,7 +154,7 @@
         color: $thirdColor;
       
     }
-    
+
     footer{
         text-align: center;
         background-color: $secondaryColor;
@@ -257,4 +259,5 @@
     #myProjects p{
      @include secondFont('Montserrat', 400, 18px);   
     }
+   
 }
