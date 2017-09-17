@@ -34,6 +34,14 @@ footer {
     margin: 0px;
     padding: 0px; }
 
+.overlay button {
+  width: 0%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d06868; }
+
 #portfolioProjects a {
   margin: 0 auto;
   height: 75px;
@@ -84,6 +92,30 @@ footer {
     font-size: 12px;
     text-align: center;
     padding: 4px; }
+  .opened {
+    background-color: #d06868;
+    width: 100vw;
+    height: 100vw;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s; }
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center; }
+  .overlay {
+    width: 0%; }
+    .overlay a {
+      visibility: hidden; }
+  .opened a {
+    color: #e1e1e4;
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    height: 100vh;
+    width: 100%; }
   .hamburgerMenu {
     visibility: visible; }
   .row, .col {
@@ -191,10 +223,7 @@ footer {
     margin: 10px; }
   #portfolioProjects h1, #home-about h1 {
     margin-bottom: 100px;
-    padding-top: 100px;
-    font-family: "Bungee";
-    font-weight: 400;
-    font-size: 48px; }
+    padding-top: 100px; }
   .projectImg {
     height: 310px;
     float: left;
