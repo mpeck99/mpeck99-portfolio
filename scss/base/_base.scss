@@ -1,14 +1,51 @@
 @import 'utils/vars';
+ .body{
+        background-color: $main;
+        color: $fontColor;  
+        width: 100%;
+        @include secondFont('Montserrat', 400, 18px );
+    }
+footer{
+        text-align: center;
+        background-color: $secondaryColor;
+        color: $main;
+        margin-top: 20px;
+        @include secondFont('Montserrat', 400, 16px );
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    #portfolioProjects a{
+        margin: 0 auto;
+        height: 75px;
+        padding: 10px;
+        @include secondFont('Bungee', 400, 34px);
+        @include borderRad(15px);
+        color: $main;
+        background-color: $secondaryColor;
+        text-decoration: none;
+        margin-top: 20px;
 
+
+    }
+    #portfolioProjects{
+        background-color: $thirdColor;
+        margin:0px;
+        padding: 0px;
+    }
 
 @keyframes spin{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
-@media only screen and (min-width: 320px) {
 
+
+@media screen and (min-width:320px) and (max-width: 428px) 
+{
     #mp{
         width: 300px;
+        margin: 0 auto;
     }
     .myquote, .socialMedia, .downArrow{
         visibility: hidden;
@@ -26,16 +63,13 @@
     }
    #portfolioProjects h1, #home-about h1{
         font-size: 18px;
+        text-align: center;
     }
     #portfolioProjects h2{
         font-size: 16px;
+        text-align: center;
     }
-    .img-circle{
-        height: 250px;
-        width: 250px;
-        align-items: center;
-        
-    }
+
     #portfolioProjects a{
         height: 25px;
         margin: 0 auto;
@@ -45,44 +79,117 @@
         padding: 4px;
     }
    .hamburgerMenu{
-       visibility: visible;
+        visibility: visible;
    }
-   #portfolioProjects {
-        margin-bottom: 75px;
-    }
-    .projectImg{
-        height: 100px;
+.row, .col{
+    width: 100vw;
+}
+
+     .projectImg{
+        height: 150px;
         @include borderRad(10px);
+        margin: 0 auto !important;
+        width: 150px;
     }
     .img-circle{
-        height: 100px;
-        width: 100px;
+        height: 250px;
         border-radius: 50%;
+        margin: 0 auto; 
+        width: 250px;
     }
-    .body{
-        background-color: $main;
-        color: $fontColor;  
-        width: 100%;
-        @include secondFont('Montserrat', 400, 18px );
+    #home-about p{
+        font-size: 12px;
     }
     #portfolioProjects{
         background-color: $thirdColor;
         width: 100%;
-        
+        margin-bottom: 75px;
     }
     #aboutHeader h3, #about h1 {
         text-align: center;
     }
 
+
 }
-@media only screen and (min-width:428px) {
+//tablet
+@media screen and(min-width: 429px) and (max-width: 768px)
+{
+    #home-about p{
+        font-size: 12px;
+    }
+    #mp{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .myquote, .socialMedia, .downArrow{
+        visibility: hidden;
+    }
+    .socialMedia{
+        visibility: hidden;
+    }
+    nav a{
+        visibility: hidden;
+    }
+
+   #portfolioProjects h1, #home-about h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    #portfolioProjects h2{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #portfolioProjects a{
+        height: 25px;
+        margin: 0 auto;
+
+        font-size: 12px;
+        text-align: center;
+        padding: 4px;
+    }
+   .hamburgerMenu{
+        visibility: visible;
+   }
+
+
+     .projectImg{
+        height: 150px;
+        @include borderRad(10px);
+        margin: 0 auto !important;
+        width: 150px;
+    }
+    .img-circle{
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto; 
+        width: 150px;
+    }
+    #home-about p{
+        font-size: 12px;
+    }
+    #portfolioProjects{
+        background-color: $thirdColor;
+        width: 100%;
+        margin-bottom: 75px;
+    }
+    #aboutHeader h3, #about h1 {
+        text-align: center;
+    }
+   .logo{
+       margin: 0px;
+       height: 300px;
+       padding: 0px;
+   }
+}
+    //desktop
+@media screen and (min-width: 769px) and(max-width: 992px)
+{
     
-    
 }
-@media only screen and (min-width: 768px) {
-   
-}
-@media only screen and (min-width: 992px){
+@media screen and(min-width: 993px)and (max-width: 2400px)
+{
+
     .email,.phone{
         width: 50px;
         display: inline-block;
@@ -93,22 +200,21 @@
     .hamburgerMenu{
        visibility: hidden;
    }
- 
-    .socialMedia{
-    width: 50px;
-    margin-bottom: 25px;
-    }
-    
+
     .socialMedia:hover{
         animation-name: spin;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
     }
+    .socialMedia{
+        margin: 50px;
+        width: 50px;
+    }
     .nav a{
         @include navFont;
         font-size: 28px;
         margin: 10px 50px;
-        padding: 0px;
+
         color: $fontColor;
     }
     
@@ -120,22 +226,14 @@
     .img-circle{
         width: 400px;
         height: 400px;
+        @include borderRad(50%);
     }
     #mp{
         width: 500px;
+        margin-top: 0px;
     }
 
-    #portfolioProjects a{
-        margin: 0 auto;
-        height: 75px;
-        padding: 10px;
-
-        @include secondFont('Bungee', 400, 34px);
-        @include borderRad(15px);
-        color: $main;
-        background-color: $secondaryColor;
-        text-decoration: none;
-    }
+   
     #portfolioProjects{
         margin: 10px;
     }
@@ -168,19 +266,10 @@
 .skills{
     text-align: center;
 }
-    footer{
-        text-align: center;
-        background-color: $secondaryColor;
-        color: $main;
-        @include secondFont('Montserrat', 400, 16px );
-        p{
-            margin: 0px;
-            padding: 0px;
-        }
-    }
+    
  
     #portfolioHeader{
-        height: 50vh;
+        height: 525px;
     }
     
     .header{
@@ -203,42 +292,38 @@
         padding-right: 0;
        
     }
-    
-    .logo{
+    #projectInfo, .logo{
         text-align: center;
         margin: 0 auto;
         width: 1000px;
-        margin-top: 150px;
+        //margin-top: 150px;
     }
   
-    #portfolioProjects h1, #home-about h1{
+    #portfolioProjects h1, #home-about h1, {
         text-align: center;
         margin-bottom: 100px;
-        padding-top: 100px;
         @include secondFont('Bungee', 400, 48px);
     }
-    
+    #contact h1, #about h1, #myProjects h1, #skillSet h1{
+        text-align: center;
+        margin: 10px;
+        @include secondFont('Bungee', 400, 48px);
+    }
     
     .nav{
         text-align: center;
     }
     
-    
+    .socialIcons{
+        margin: -100px;
+    }
     .projectTitle{
         color: $thirdColor;
     }
-    #portfolioProjects a{
-        margin: 0 auto;
-        height: 75px;
-        padding: 10px;
-        margin-top: 100px;
-        @include secondFont('Bungee', 400, 34px);
-        @include borderRad(15px);
-        color: $main;
-        background-color: $secondaryColor;
-        text-decoration: none;
-    }
-    
+#portfolioProjects img{
+    @include borderRad(10px);
+}
+
     #portfolioProjects h2{
         text-align: center;
         font-size: 26px;
@@ -286,9 +371,7 @@
         margin: auto;
         display: block;
     }
-   span img{
-       margin-bottom: 10px;
-   }
+  
    .form-group input, .form-group textarea{
         width: 500px;
         justify-content: center;
@@ -325,7 +408,10 @@
     float: right;
     
 }
-
+.projectImg{
+    height: 310px;
+    @include borderRad(10px);
+}
 .projectInfo-right{
     float: left;
 }
@@ -333,10 +419,7 @@
      @extend .languages;
      background-color: $secondaryColor;
  }
-.row{
-    margin: 25px;
- 
-}
+
 #about h1{
     margin-top: 10px;
 }
@@ -367,5 +450,23 @@
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+}
+header h3{
+    margin-top: 10px;
+    font-style: italic;
+}
+ul{
+    font-size: 26px;
+    text-align: left;
+    color: $fontColor;
+    visibility: hidden;
+}
+.tools:hover, .server:hover, .languages:hover{
+    ul{
+        visibility: visible;
+    }
+}
+.tools ul{
+    color: $main;
 }
 }

@@ -14,15 +14,54 @@
   40%, 60% {
     transform: translateY(0px); } }
 
+.body {
+  background-color: #36413e;
+  color: #e1e1e4;
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px; }
+
+footer {
+  text-align: center;
+  background-color: #19c2bc;
+  color: #36413e;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px; }
+  footer p {
+    margin: 0px;
+    padding: 0px; }
+
+#portfolioProjects a {
+  margin: 0 auto;
+  height: 75px;
+  padding: 10px;
+  font-family: "Bungee";
+  font-weight: 400;
+  font-size: 34px;
+  border-radius: 15px;
+  color: #36413e;
+  background-color: #19c2bc;
+  text-decoration: none;
+  margin-top: 20px; }
+
+#portfolioProjects {
+  background-color: #d06868;
+  margin: 0px;
+  padding: 0px; }
+
 @keyframes spin {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
 
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 428px) {
   #mp {
-    width: 300px; }
+    width: 300px;
+    margin: 0 auto; }
   .myquote, .socialMedia, .downArrow {
     visibility: hidden; }
   .socialMedia {
@@ -34,13 +73,11 @@
     background-color: transparent;
     border: none; }
   #portfolioProjects h1, #home-about h1 {
-    font-size: 18px; }
+    font-size: 18px;
+    text-align: center; }
   #portfolioProjects h2 {
-    font-size: 16px; }
-  .img-circle {
-    height: 250px;
-    width: 250px;
-    align-items: center; }
+    font-size: 16px;
+    text-align: center; }
   #portfolioProjects a {
     height: 25px;
     margin: 0 auto;
@@ -49,29 +86,77 @@
     padding: 4px; }
   .hamburgerMenu {
     visibility: visible; }
-  #portfolioProjects {
-    margin-bottom: 75px; }
+  .row, .col {
+    width: 100vw; }
   .projectImg {
-    height: 100px;
-    border-radius: 10px; }
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto !important;
+    width: 150px; }
   .img-circle {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%; }
-  .body {
-    background-color: #36413e;
-    color: #e1e1e4;
-    width: 100%;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 18px; }
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 250px; }
+  #home-about p {
+    font-size: 12px; }
   #portfolioProjects {
     background-color: #d06868;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 75px; }
   #aboutHeader h3, #about h1 {
     text-align: center; } }
 
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  #home-about p {
+    font-size: 12px; }
+  #mp {
+    width: 300px;
+    margin: 0 auto; }
+  .myquote, .socialMedia, .downArrow {
+    visibility: hidden; }
+  .socialMedia {
+    visibility: hidden; }
+  nav a {
+    visibility: hidden; }
+  #portfolioProjects h1, #home-about h1 {
+    font-size: 18px;
+    text-align: center; }
+  #portfolioProjects h2 {
+    font-size: 16px;
+    text-align: center; }
+  #portfolioProjects a {
+    height: 25px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    padding: 4px; }
+  .hamburgerMenu {
+    visibility: visible; }
+  .projectImg {
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto !important;
+    width: 150px; }
+  .img-circle {
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 150px; }
+  #home-about p {
+    font-size: 12px; }
+  #portfolioProjects {
+    background-color: #d06868;
+    width: 100%;
+    margin-bottom: 75px; }
+  #aboutHeader h3, #about h1 {
+    text-align: center; }
+  .logo {
+    margin: 0px;
+    height: 300px;
+    padding: 0px; } }
+
+@media screen and (min-width: 993px) and (max-width: 2400px) {
   .email, .phone {
     width: 50px;
     display: inline-block; }
@@ -79,18 +164,17 @@
     visibility: visible; }
   .hamburgerMenu {
     visibility: hidden; }
-  .socialMedia {
-    width: 50px;
-    margin-bottom: 25px; }
   .socialMedia:hover {
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: ease-in-out; }
+  .socialMedia {
+    margin: 50px;
+    width: 50px; }
   .nav a {
     font-family: 'Bungee', cursive;
     font-size: 28px;
     margin: 10px 50px;
-    padding: 0px;
     color: #e1e1e4; }
   .nav a:hover {
     text-decoration: none;
@@ -98,20 +182,11 @@
     transform: translateY(-10px); }
   .img-circle {
     width: 400px;
-    height: 400px; }
+    height: 400px;
+    border-radius: 50%; }
   #mp {
-    width: 500px; }
-  #portfolioProjects a {
-    margin: 0 auto;
-    height: 75px;
-    padding: 10px;
-    font-family: "Bungee";
-    font-weight: 400;
-    font-size: 34px;
-    border-radius: 15px;
-    color: #36413e;
-    background-color: #19c2bc;
-    text-decoration: none; }
+    width: 500px;
+    margin-top: 0px; }
   #portfolioProjects {
     margin: 10px; }
   #portfolioProjects h1, #home-about h1 {
@@ -139,18 +214,8 @@
     color: #d06868; }
   .skills {
     text-align: center; }
-  footer {
-    text-align: center;
-    background-color: #19c2bc;
-    color: #36413e;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 16px; }
-    footer p {
-      margin: 0px;
-      padding: 0px; }
   #portfolioHeader {
-    height: 50vh; }
+    height: 525px; }
   .header {
     height: 100vh; }
   .downArrow {
@@ -164,34 +229,30 @@
     height: 100vh;
     padding-left: 0;
     padding-right: 0; }
-  .logo {
+  #projectInfo, .logo {
     text-align: center;
     margin: 0 auto;
-    width: 1000px;
-    margin-top: 150px; }
+    width: 1000px; }
   #portfolioProjects h1, #home-about h1 {
     text-align: center;
     margin-bottom: 100px;
-    padding-top: 100px;
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 48px; }
+  #contact h1, #about h1, #myProjects h1, #skillSet h1 {
+    text-align: center;
+    margin: 10px;
     font-family: "Bungee";
     font-weight: 400;
     font-size: 48px; }
   .nav {
     text-align: center; }
+  .socialIcons {
+    margin: -100px; }
   .projectTitle {
     color: #d06868; }
-  #portfolioProjects a {
-    margin: 0 auto;
-    height: 75px;
-    padding: 10px;
-    margin-top: 100px;
-    font-family: "Bungee";
-    font-weight: 400;
-    font-size: 34px;
-    border-radius: 15px;
-    color: #36413e;
-    background-color: #19c2bc;
-    text-decoration: none; }
+  #portfolioProjects img {
+    border-radius: 10px; }
   #portfolioProjects h2 {
     text-align: center;
     font-size: 26px; }
@@ -230,8 +291,6 @@
     border-radius: 50%;
     margin: auto;
     display: block; }
-  span img {
-    margin-bottom: 10px; }
   .form-group input, .form-group textarea {
     width: 500px;
     justify-content: center; }
@@ -263,12 +322,13 @@
     height: 310px;
     border-radius: 10px;
     float: right; }
+  .projectImg {
+    height: 310px;
+    border-radius: 10px; }
   .projectInfo-right {
     float: left; }
   .tools {
     background-color: #19c2bc; }
-  .row {
-    margin: 25px; }
   #about h1 {
     margin-top: 10px; }
   #about p {
@@ -291,4 +351,16 @@
   .contactInfo img:hover {
     animation-name: spin;
     animation-duration: 1s;
-    animation-timing-function: ease-in-out; } }
+    animation-timing-function: ease-in-out; }
+  header h3 {
+    margin-top: 10px;
+    font-style: italic; }
+  ul {
+    font-size: 26px;
+    text-align: left;
+    color: #e1e1e4;
+    visibility: hidden; }
+  .tools:hover ul, .server:hover ul, .languages:hover ul, .tools:hover ul {
+    visibility: visible; }
+  .tools ul {
+    color: #36413e; } }
