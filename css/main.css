@@ -61,6 +61,7 @@
   .body {
     background-color: #36413e;
     color: #e1e1e4;
+    width: 100%;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 18px; }
@@ -72,7 +73,8 @@
 
 @media only screen and (min-width: 992px) {
   .email, .phone {
-    width: 50px; }
+    width: 50px;
+    display: inline-block; }
   .myquote, .socialMedia, .downArrow, .nav a {
     visibility: visible; }
   .hamburgerMenu {
@@ -119,15 +121,24 @@
     font-weight: 400;
     font-size: 48px; }
   .projectImg {
-    height: 320px; }
+    height: 310px;
+    float: left;
+    margin-top: 10px; }
+  #myProjects h2, #myProjects p {
+    float: right;
+    width: 575px; }
   .body {
     background-color: #36413e;
     color: #e1e1e4;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 18px; }
+  article {
+    margin-bottom: 20px; }
   nav .active {
     color: #d06868; }
+  .skills {
+    text-align: center; }
   footer {
     text-align: center;
     background-color: #19c2bc;
@@ -150,10 +161,14 @@
     animation-timing-function: ease;
     animation-iteration-count: infinite; }
   #portfolioProjects, #home-about {
-    height: 100vh; }
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0; }
   .logo {
     text-align: center;
-    margin-top: 20vh; }
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 150px; }
   #portfolioProjects h1, #home-about h1 {
     text-align: center;
     margin-bottom: 100px;
@@ -163,6 +178,8 @@
     font-size: 48px; }
   .nav {
     text-align: center; }
+  .projectTitle {
+    color: #d06868; }
   #portfolioProjects a {
     margin: 0 auto;
     height: 75px;
@@ -206,4 +223,72 @@
   #myProjects p {
     font-family: "Montserrat";
     font-weight: 400;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .img-circle-about {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    display: block; }
+  span img {
+    margin-bottom: 10px; }
+  .form-group input, .form-group textarea {
+    width: 500px;
+    justify-content: center; }
+  .msgBtn {
+    background-color: #d06868;
+    color: #e1e1e4;
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center; }
+  .contact-form {
+    margin: auto;
+    display: block; }
+  #about {
+    background-color: #d06868; }
+  .languages, .tools, .server {
+    background-color: #d06868;
+    color: #36413e;
+    text-align: center;
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 48px;
+    height: 370px;
+    width: 370px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin: 0 auto; }
+  .projectImg-right {
+    height: 310px;
+    border-radius: 10px;
+    float: right; }
+  .projectInfo-right {
+    float: left; }
+  .tools {
+    background-color: #19c2bc; }
+  .row {
+    margin: 25px; }
+  #about h1 {
+    margin-top: 10px; }
+  #about p {
+    margin-top: 20px;
+    width: 500px;
+    margin: 10 auto;
+    display: block;
+    font-size: 22px; }
+  #about img {
+    float: right; }
+  #about {
+    height: 500px; }
+  #contact .socialMedia {
+    margin: 50px; }
+  .contactInfo img {
+    margin-left: 50px;
+    margin-top: 10px; }
+  .contactInfo {
+    font-size: 22px; }
+  .contactInfo img:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; } }

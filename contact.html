@@ -9,31 +9,45 @@
 </head>
 <body class="body">   
 <div class="container">
-
-<header id="aboutHeader" class="header">
-        <nav class="nav justify-content-center">
-                <a  href="index.html">Home</a>
+    <header class="header" id="portfolioHeader">
+        <div class="container">
+            <nav class="nav justify-content-center">
+                <a href="index.html">Home</a>
                 <a  href="mywork.html">Portfolio</a>
-                <a  href="about.html">About Me</a>
+                <a href="about.html">About Me</a>
                 <a class="active" href="contact.html">Contact Me</a>
-            </nav>  <button type="button" class="hamburgerMenu">
-                        <img src="assets/hamburger-menu.png" alt="hamburger" class="float-right">
-                    </button> 
-            <div class="pagination-centered">  
-                <img src="assets/logo.png" alt='logo' id='mp' class="pagination-centered" >
-
+            </nav>
+            <button type="button" class="hamburgerMenu">
+                <img src="assets/hamburger-menu.png" alt="hamburger" class="float-right">
+            </button> 
+            <div class="pagination-centered logo">
+                <img src="assets/logo.png" alt='logo' id='mp' >
             </div>
-</header>
-<div class="container-fluid" id="about">
+        </div><!--Container Fluid-header -->  
+    </header>
+<div class="container-fluid" id="contact">
         <h1>Contact Me</h1>
         <div class="row">
             <div class="col-sm-6 col-lg-6">
-                <img src="assets/portfolioIMg.png" class="img-circle" alt="portfolioPicture" >
-                <img src="assets/email.png" alt="email" class="email"><h5>mlpeck@fullsail.edu</h5>
-            <img src="assets/phone.png" alt="phone" class="phone"><h5>316-882-4474</h5>
+                <img src="assets/portfolioIMg.png" class="img-circle-about" alt="portfolioPicture"><br>
+                <p>Hello feel free to contact me via the form to the right. If you would like to reach me by phone or my email I have provided the information below. I look forward to hearing from you!</p>
+                <span class="contactInfo"> <img src="assets/email.png" alt="email" class="email"> mlpeck@fullsail.edu</span><br>
+               
+                <span class="contactInfo"><img src="assets/phone.png" alt="phone" class="phone"> 1-316-882-4474<i class="phone"></i></span><br>
+                <a href="https://www.facebook.com/MorganPeck99">
+                    <img class="socialMedia" src="assets/facebook.png" alt="facebook">
+                </a>
+
+                <a href="https://github.com/mpeck99">
+                    <img class="socialMedia" src="assets/github.svg" alt="github">
+                </a>
+
+                <a href="https://www.linkedin.com/in/morgan-peck-5b31a4115/">
+                    <img class="socialMedia" src="assets/linkedin.png" alt="linkedIn">
+                </a>
         </div>
-        <div class="col-sm-1 col-md-6 col-lg-6 justify-content-center">  
-                <form action="" class="col-6"> 
+        <div class="col-sm-1 col-md-6 col-lg-6 contact-form">  
+                <form action=""> 
                 <div class="form-group">
                     <label for="user">*Full Name </label>
                     <input type="text" class="form-control" id="user">
@@ -45,11 +59,13 @@
                 <div class="form-group">
                     <label for="comment">*Message </label>
                     <textarea class="form-control" id="comment" cols="30" rows="10"></textarea>
+                    <p>* required</p>
                 </div>
-                <button type="submit" class="btn btn-default msgBtn">Send Message</button>
+                <div class="center-block">
+                   <button type="submit" class="btn btn-default msgBtn">Send Message</button> 
+                </div>
+                
             </form> 
-            <p>
-            </p>
         </div>
        
        
@@ -62,9 +78,9 @@
  <p>Morgan Peck</p>
         <p>mlpeck@fullsail.edu</p>
     </footer>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 </body>
 </html>

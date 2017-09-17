@@ -62,6 +62,7 @@
     .body{
         background-color: $main;
         color: $fontColor;  
+        width: 100%;
         @include secondFont('Montserrat', 400, 18px );
     }
     #portfolioProjects{
@@ -84,6 +85,7 @@
 @media only screen and (min-width: 992px){
     .email,.phone{
         width: 50px;
+        display: inline-block;
     }
      .myquote, .socialMedia,.downArrow, .nav a{
         visibility: visible;
@@ -91,6 +93,7 @@
     .hamburgerMenu{
        visibility: hidden;
    }
+ 
     .socialMedia{
     width: 50px;
     margin-bottom: 25px;
@@ -142,19 +145,29 @@
         @include secondFont('Bungee', 400, 48px);
     }
     .projectImg{
-        height: 320px;
+        height: 310px;
+        float: left;
+        margin-top: 10px;
+    }
+    #myProjects h2, #myProjects p{
+        float: right;
+        width: 575px;
     }
     .body{
         background-color: $main;
         color: $fontColor;  
         @include secondFont('Montserrat', 400, 18px );
     }
-    
+    article{
+        margin-bottom: 20px;
+    }
     nav .active{
         color: $thirdColor;
       
     }
-
+.skills{
+    text-align: center;
+}
     footer{
         text-align: center;
         background-color: $secondaryColor;
@@ -186,12 +199,16 @@
     
     #portfolioProjects, #home-about{
         height: 100vh;
+        padding-left: 0;
+        padding-right: 0;
        
     }
     
     .logo{
         text-align: center;
-        margin-top: 20vh;
+        margin: 0 auto;
+        width: 1000px;
+        margin-top: 150px;
     }
   
     #portfolioProjects h1, #home-about h1{
@@ -207,6 +224,9 @@
     }
     
     
+    .projectTitle{
+        color: $thirdColor;
+    }
     #portfolioProjects a{
         margin: 0 auto;
         height: 75px;
@@ -259,5 +279,93 @@
     #myProjects p{
      @include secondFont('Montserrat', 400, 18px);   
     }
-   
+    .img-circle-about{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+    }
+   span img{
+       margin-bottom: 10px;
+   }
+   .form-group input, .form-group textarea{
+        width: 500px;
+        justify-content: center;
+   }
+   .msgBtn{
+       background-color: $thirdColor;
+       color: $fontColor;
+       @include secondFont('Bungee', 400, 18px);
+       text-align: center;
+   }
+   .contact-form{
+       margin: auto;
+       display: block;
+   }
+   #about{
+       background-color: $thirdColor;
+
+   }
+
+ .languages, .server{
+     background-color: $thirdColor;
+     color: $main;
+     text-align: center;
+     @include secondFont('Bungee', 400,48px);
+     height: 370px;
+     width: 370px;
+     border-radius: 25px;
+     margin-bottom: 20px;
+    margin: 0 auto;
+ }
+.projectImg-right{
+    height: 310px;
+    @include borderRad(10px);
+    float: right;
+    
+}
+
+.projectInfo-right{
+    float: left;
+}
+ .tools{
+     @extend .languages;
+     background-color: $secondaryColor;
+ }
+.row{
+    margin: 25px;
+ 
+}
+#about h1{
+    margin-top: 10px;
+}
+#about p{
+    margin-top: 20px;
+    width: 500px;
+    margin: 10 auto;
+    display: block;
+    font-size: 22px;
+}
+#about img{
+    float: right;
+}
+#about{
+    height:500px;
+}
+#contact .socialMedia{
+    margin: 50px;
+}
+.contactInfo img{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.contactInfo {
+    font-size: 22px;
+}
+.contactInfo img:hover{
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
 }
