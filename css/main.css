@@ -145,7 +145,7 @@ footer {
   #myProjects {
     text-align: center;
     font-size: 14px; }
-  .img-circle {
+  .img-circle, .img-circle-contact {
     height: 250px;
     border-radius: 50%;
     margin: 0 auto;
