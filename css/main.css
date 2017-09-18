@@ -72,26 +72,16 @@ footer {
     margin: 0 auto; }
   .myquote, .socialMedia, .downArrow {
     visibility: hidden; }
-  .socialMedia {
-    visibility: hidden; }
+  .col-4 {
+    height: 0; }
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .row, .col {
+    width: 100vw; }
   nav a {
     visibility: hidden; }
-  button {
-    float: right;
-    background-color: transparent;
-    border: none; }
-  #portfolioProjects h1, #home-about h1 {
-    font-size: 18px;
-    text-align: center; }
-  #portfolioProjects h2 {
-    font-size: 16px;
-    text-align: center; }
-  #portfolioProjects a {
-    height: 25px;
-    margin: 0 auto;
-    font-size: 12px;
-    text-align: center;
-    padding: 4px; }
   .opened {
     background-color: #d06868;
     width: 100vw;
@@ -103,11 +93,8 @@ footer {
     position: relative;
     top: 20%;
     width: 100%;
-    text-align: center; }
-  .overlay {
-    width: 0%; }
-    .overlay a {
-      visibility: hidden; }
+    text-align: center;
+    text-decoration: none; }
   .opened a {
     color: #e1e1e4;
     font-family: "Bungee";
@@ -115,42 +102,28 @@ footer {
     font-size: 36px;
     text-align: center;
     height: 100vh;
-    width: 100%; }
+    width: 100%;
+    text-decoration: none; }
+  .overlay {
+    width: 0%;
+    height: 0%;
+    float: left;
+    margin: 10px; }
+    .overlay a {
+      visibility: hidden; }
   .hamburgerMenu {
     visibility: visible; }
-  .row, .col {
-    width: 100vw; }
-  .projectImg {
-    height: 150px;
-    border-radius: 10px;
-    margin: 0 auto !important;
-    width: 150px; }
-  .img-circle {
-    height: 250px;
-    border-radius: 50%;
-    margin: 0 auto;
-    width: 250px; }
-  #home-about p {
-    font-size: 12px; }
-  #portfolioProjects {
+  button {
+    float: left;
+    background-color: transparent;
+    border: none; }
+  .msgBtn {
     background-color: #d06868;
-    width: 100%;
-    margin-bottom: 75px; }
-  #aboutHeader h3, #about h1 {
-    text-align: center; } }
-
-@media screen and (min-width: 429px) and (max-width: 768px) {
-  #home-about p {
-    font-size: 12px; }
-  #mp {
-    width: 300px;
-    margin: 0 auto; }
-  .myquote, .socialMedia, .downArrow {
-    visibility: hidden; }
-  .socialMedia {
-    visibility: hidden; }
-  nav a {
-    visibility: hidden; }
+    color: #e1e1e4;
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center; }
   #portfolioProjects h1, #home-about h1 {
     font-size: 18px;
     text-align: center; }
@@ -163,46 +136,241 @@ footer {
     font-size: 12px;
     text-align: center;
     padding: 4px; }
-  .hamburgerMenu {
-    visibility: visible; }
-  .projectImg {
-    height: 150px;
-    border-radius: 10px;
-    margin: 0 auto !important;
-    width: 150px; }
-  .img-circle {
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto;
-    width: 150px; }
-  #home-about p {
-    font-size: 12px; }
   #portfolioProjects {
     background-color: #d06868;
     width: 100%;
-    margin-bottom: 75px; }
+    margin: 0 auto;
+    height: 600px;
+    text-align: center; }
+  #myProjects {
+    text-align: center;
+    font-size: 14px; }
+  .img-circle {
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 250px; }
+  img.email, img.phone {
+    width: 50px;
+    margin: 10px;
+    text-align: center; }
+  .socialMediaContact {
+    visibility: visible;
+    width: 50px;
+    margin: 20px; }
+  #portfolioProjects img, #myProjects img {
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto !important;
+    width: 150px;
+    text-align: center; }
+  #home-about p {
+    font-size: 12px; }
   #aboutHeader h3, #about h1 {
     text-align: center; }
-  .logo {
-    margin: 0px;
-    height: 300px;
-    padding: 0px; } }
+  #aboutLogo {
+    width: 300px;
+    margin-top: 20px; }
+  ul {
+    text-align: left;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    color: #e1e1e4; }
+  .skills {
+    background-color: #d06868;
+    color: #36413e;
+    text-align: center;
+    margin: 0 auto; }
+  .about p {
+    font-size: 14px;
+    text-align: center; }
+  .skills p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px; }
+  .skills h1 {
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px !important;
+    color: #e1e1e4; }
+  #contact p {
+    font-size: 14px;
+    text-align: center; } }
 
-@media screen and (min-width: 993px) and (max-width: 2400px) {
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  #mp {
+    width: 500px;
+    margin: 0 auto !important;
+    justify-content: center;
+    display: flex; }
+  .myquote, .socialMedia, .downArrow {
+    visibility: hidden; }
+  .col-4 {
+    height: 0; }
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .col-md-6 {
+    text-align: center; }
+  nav a {
+    visibility: hidden; }
+  button {
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: transparent; }
+  .opened {
+    background-color: #d06868;
+    width: 100vw;
+    height: 100vw;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s; }
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    height: 100vh; }
+  .overlay {
+    width: 0%;
+    height: 0%;
+    float: left;
+    margin: 10px; }
+    .overlay a {
+      visibility: hidden; }
+  .opened a {
+    color: #e1e1e4;
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%; }
+  .hamburgerMenu {
+    visibility: visible; }
+  #portfolioProjects h1, #home-about h1 {
+    font-size: 28px;
+    text-align: center; }
+  #portfolioProjects h2 {
+    font-size: 22px;
+    text-align: center; }
+  #portfolioProjects a {
+    height: 40px;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    padding: 4px; }
+  #portfolioProjects {
+    background-color: #d06868;
+    width: 100%;
+    margin: 0 auto;
+    height: 950px;
+    text-align: center; }
+  button {
+    float: left; }
+  #myProjects {
+    text-align: center;
+    font-size: 14px; }
+  .img-circle {
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 250px;
+    float: right; }
+  .img-circle-contact {
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    display: flex; }
+  img.email, img.phone {
+    width: 50px;
+    margin: 10px;
+    text-align: center; }
+  .socialMediaContact {
+    visibility: visible;
+    width: 50px;
+    margin: 20px; }
+  #portfolioProjects img, #myProjects img {
+    height: 250px;
+    border-radius: 10px;
+    margin: 0 auto !important;
+    width: 250px; }
+  #contact h1 {
+    text-align: center; }
+  .form-group {
+    width: 600px; }
+  #home-about p {
+    font-size: 18px;
+    margin-top: 10px; }
+  #aboutHeader h3, #about h1 {
+    text-align: center; }
+  #aboutLogo {
+    width: 300px;
+    margin-top: 20px; }
+  ul {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    color: #e1e1e4;
+    margin: 10px; }
+  .skills {
+    background-color: #d06868;
+    color: #36413e;
+    text-align: center;
+    margin: 0 auto; }
+  .about p {
+    font-size: 14px;
+    text-align: center; }
+  .skills p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px; }
+  .skills h1 {
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #e1e1e4; }
+  #contact p {
+    font-size: 14px;
+    text-align: center; }
+  .msgBtn {
+    background-color: #d06868;
+    color: #e1e1e4;
+    font-family: "Bungee";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center; } }
+
+@media screen and (min-width: 993px) {
+  .body {
+    background-color: #36413e;
+    color: #e1e1e4;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px; }
+  article {
+    margin-bottom: 20px; }
   .email, .phone {
     width: 50px;
     display: inline-block; }
   .myquote, .socialMedia, .downArrow, .nav a {
     visibility: visible; }
-  .hamburgerMenu {
+  header h3 {
+    margin-top: 10px;
+    font-style: italic; }
+  .hamburgerMenu, .overlay {
     visibility: hidden; }
-  .socialMedia:hover {
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out; }
-  .socialMedia {
-    margin: 50px;
-    width: 50px; }
+  nav .active {
+    color: #d06868; }
   .nav a {
     font-family: 'Bungee', cursive;
     font-size: 28px;
@@ -212,7 +380,14 @@ footer {
     text-decoration: none;
     color: #19c2bc;
     transform: translateY(-10px); }
-  .img-circle {
+  .socialMedia:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; }
+  .socialMedia, .socialMediaContact {
+    margin: 50px;
+    width: 50px; }
+  .img-circle, .img-circle-contact {
     width: 400px;
     height: 400px;
     border-radius: 50%; }
@@ -231,18 +406,6 @@ footer {
   #myProjects h2, #myProjects p {
     float: right;
     width: 575px; }
-  .body {
-    background-color: #36413e;
-    color: #e1e1e4;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 18px; }
-  article {
-    margin-bottom: 20px; }
-  nav .active {
-    color: #d06868; }
-  .skills {
-    text-align: center; }
   #portfolioHeader {
     height: 525px; }
   .header {
@@ -260,8 +423,7 @@ footer {
     padding-right: 0; }
   #projectInfo, .logo {
     text-align: center;
-    margin: 0 auto;
-    width: 1000px; }
+    margin: 0 auto; }
   #portfolioProjects h1, #home-about h1 {
     text-align: center;
     margin-bottom: 100px;
@@ -330,9 +492,20 @@ footer {
     font-weight: 400;
     font-size: 18px;
     text-align: center; }
-  .contact-form {
-    margin: auto;
-    display: block; }
+  .projectImg-right {
+    height: 310px;
+    border-radius: 10px;
+    float: right; }
+  .projectImg {
+    height: 310px;
+    border-radius: 10px;
+    float: left; }
+  .projectInfo-right {
+    float: left; }
+  #about h1 {
+    margin-top: 10px; }
+  .tools {
+    background-color: #19c2bc !important; }
   #about {
     background-color: #d06868; }
   .languages, .tools, .server {
@@ -347,25 +520,23 @@ footer {
     border-radius: 25px;
     margin-bottom: 20px;
     margin: 0 auto; }
-  .projectImg-right {
-    height: 310px;
-    border-radius: 10px;
-    float: right; }
-  .projectImg {
-    height: 310px;
-    border-radius: 10px; }
-  .projectInfo-right {
-    float: left; }
-  .tools {
-    background-color: #19c2bc; }
-  #about h1 {
-    margin-top: 10px; }
   #about p {
     margin-top: 20px;
     width: 500px;
     margin: 10 auto;
     display: block;
     font-size: 22px; }
+  ul {
+    font-size: 26px;
+    text-align: left;
+    color: #e1e1e4;
+    visibility: hidden; }
+  .tools:hover ul, .server:hover ul, .languages:hover ul, .tools:hover ul {
+    visibility: visible; }
+  .tools ul {
+    color: #36413e; }
+  .skills {
+    text-align: center; }
   #about img {
     float: right; }
   #about {
@@ -381,15 +552,6 @@ footer {
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: ease-in-out; }
-  header h3 {
-    margin-top: 10px;
-    font-style: italic; }
-  ul {
-    font-size: 26px;
-    text-align: left;
-    color: #e1e1e4;
-    visibility: hidden; }
-  .tools:hover ul, .server:hover ul, .languages:hover ul, .tools:hover ul {
-    visibility: visible; }
-  .tools ul {
-    color: #36413e; } }
+  .contact-form {
+    margin: auto;
+    display: block; } }
