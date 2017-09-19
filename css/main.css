@@ -34,14 +34,6 @@ footer {
     margin: 0px;
     padding: 0px; }
 
-.overlay button {
-  width: 0%;
-  height: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #d06868; }
-
 #portfolioProjects a {
   margin: 0 auto;
   height: 75px;
@@ -67,11 +59,14 @@ footer {
     transform: rotate(360deg); } }
 
 @media screen and (min-width: 320px) and (max-width: 428px) {
-  #mp {
+  .logo, #mp {
     width: 300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: block; }
   .myquote, .socialMedia, .downArrow {
     visibility: hidden; }
+  header {
+    height: 50vh; }
   .col-4 {
     height: 0; }
   .container {
@@ -103,6 +98,7 @@ footer {
     text-align: center;
     height: 100vh;
     width: 100%;
+    z-index: 1;
     text-decoration: none; }
   .overlay {
     width: 0%;
@@ -125,11 +121,13 @@ footer {
     font-size: 18px;
     text-align: center; }
   #portfolioProjects h1, #home-about h1 {
-    font-size: 18px;
-    text-align: center; }
+    font-size: 22px;
+    text-align: center;
+    margin: 10px; }
   #portfolioProjects h2 {
     font-size: 16px;
-    text-align: center; }
+    text-align: center;
+    margin: 10px; }
   #portfolioProjects a {
     height: 25px;
     margin: 0 auto;
@@ -140,7 +138,7 @@ footer {
     background-color: #d06868;
     width: 100%;
     margin: 0 auto;
-    height: 600px;
+    height: 650px;
     text-align: center; }
   #myProjects {
     text-align: center;
@@ -154,6 +152,8 @@ footer {
     width: 50px;
     margin: 10px;
     text-align: center; }
+  #home-about {
+    text-align: center; }
   .socialMediaContact {
     visibility: visible;
     width: 50px;
@@ -165,7 +165,8 @@ footer {
     width: 150px;
     text-align: center; }
   #home-about p {
-    font-size: 12px; }
+    font-size: 14px;
+    text-align: justify; }
   #aboutHeader h3, #about h1 {
     text-align: center; }
   #aboutLogo {
@@ -184,7 +185,7 @@ footer {
     margin: 0 auto; }
   .about p {
     font-size: 14px;
-    text-align: center; }
+    justify-content: center; }
   .skills p {
     font-family: "Montserrat";
     font-weight: 400;
@@ -202,9 +203,7 @@ footer {
 @media screen and (min-width: 429px) and (max-width: 768px) {
   #mp {
     width: 500px;
-    margin: 0 auto !important;
-    justify-content: center;
-    display: flex; }
+    margin: 0 auto !important; }
   .myquote, .socialMedia, .downArrow {
     visibility: hidden; }
   .col-4 {
