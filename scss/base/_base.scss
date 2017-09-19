@@ -17,8 +17,13 @@ footer{
             padding: 0px;
         }
     }
-
-
+   .row h1{
+       width: 100%;
+       
+   }
+   .mywork{
+       text-align: center;
+   }
     #portfolioProjects a{
         margin: 0 auto;
         height: 75px;
@@ -44,14 +49,12 @@ footer{
     to{transform: rotate(360deg);}
 }
 
-@media screen and (min-width:320px) and (max-width: 428px) 
+@media screen and (min-width:320px) and (max-width: 425px) 
 {
     //logo
     .logo , #mp{
         width: 300px;
         margin: 0 auto;
-        display: block;
-        //margin-top: 50px;
     }
     //header info
     .myquote, .socialMedia, .downArrow{
@@ -80,17 +83,14 @@ footer{
     }  
      //mobile menu
     .opened{
-        background-color: rgba(208, 104, 104, 8);
+//0background-color: rgba(208, 104, 104, 8);
         width:100vw;
         height: 100vw;
-        z-index: 1;
-        overflow: hidden;
         transition: .5s;
        
     }
 
     .overlay-content{
-        position: relative;
         top: 20%;
         width: 100%;
         text-align: center;
@@ -100,12 +100,15 @@ footer{
 
      .opened a{
         color: $fontColor;
-        @include secondFont('Bungee', 400, 36px);
-        text-align: center;
-        height: 100vh;
+        @include secondFont('Bungee', 400, 18px);
+        margin: 20px;
+        justify-content: center;
+        height: 100%;
         width:100%;
-        z-index: 1;
         text-decoration: none;
+        //position: absolute;
+        display: flex;
+        direction: column;
     }
 
     .overlay{
@@ -131,8 +134,11 @@ footer{
     .msgBtn{
         background-color: $thirdColor;
         color: $fontColor;
-        @include secondFont('Bungee', 400, 18px);
-        text-align: center;
+        @include secondFont('Bungee', 400, 12px);
+        padding: 10px;
+        margin: 0 auto;
+       @include borderRad(8px);
+       
     }
     //portfolio info
     #portfolioProjects h1, #home-about h1{
@@ -198,7 +204,7 @@ footer{
         text-align: center;
     }
     //about information
-    #home-about p{
+    #home-about p, #about p{
         font-size: 12px;
         text-align: justify;
         padding: 10px;
@@ -236,24 +242,35 @@ footer{
 
     .skills h1{
         @include secondFont('Bungee', 400,18px);
-        margin-top: 10px !important;
+        padding: 10px;
         color: $fontColor;
+        text-align: center;
     }
+
     //contact
     #contact p{
         font-size: 14px;
         text-align: center;
     }
-
- 
+    #contact h1{
+        text-align: center;
+    }
+   .form-group{
+       width: 275px;
+       margin: 10px;
+   }
 }
 //tablet
-@media screen and(min-width: 429px) and (max-width: 768px)
+@media screen and(min-width: 428px) and (max-width: 768px)
 {
     //logo
     #mp{
         width: 400px;
         text-align: center;
+    }
+    .logo{
+        text-align: center;
+        margin-top: 100px;
     }
     //header info
     .myquote, .socialMedia, .downArrow{
@@ -263,9 +280,7 @@ footer{
        height: 50vh;
     }
   //layout
-    .col-4{
-        height: 0;
-    }
+
     .container{
         width: 100%;
         margin: 0;
@@ -284,13 +299,12 @@ footer{
         background-color: transparent;
         border: none;
         color: transparent;
-        height: 100px;
-        width: 100px;
+
     } 
     .opened{
-        background-color: rgba(208, 104, 104, 8);
-        width:100vw;
-        height: 100vw;
+        //background-color: rgba(208, 104, 104, 8);
+        width:100%;
+        height: 100%;
         z-index: 1;
         overflow: hidden;
         transition: .5s;
@@ -325,8 +339,10 @@ footer{
     } 
     .hamburgerMenu{
         visibility: visible;
-        width: 100px;
+        width: 50px;
         margin: 10px;
+        height: 50px;
+
         
    }
     //portfolio
@@ -337,7 +353,8 @@ footer{
 
     #portfolioProjects h2{
         font-size: 22px;
-        text-align: center;
+        text-align: center; 
+        margin: 10px;
     }
 
     #portfolioProjects a{
@@ -351,7 +368,7 @@ footer{
         background-color: $thirdColor;
         width: 100%;
         margin: 0 auto;
-        height: 950px;
+        height: 975px;
         text-align: center;
     }
     button{
@@ -604,53 +621,70 @@ footer{
     .socialIcons{
         margin: -100px;
     }
+
     .projectTitle{
-        color: $thirdColor;
+        color: $secondaryColor;
     }
-#portfolioProjects img{
-    @include borderRad(10px);
-}
+
+    #portfolioProjects img{
+        @include borderRad(10px);   
+    }
 
     #portfolioProjects h2{
         text-align: center;
         font-size: 26px;
     }
-    
-    #portfolioProjects a:hover{
-    background-color: $main;
-    color: $secondaryColor;
-    text-decoration: none;
-    
+
+    .projectOverlay{
+        visibility: hidden;
     }
+
+    #portfolioProjects img:hover .projectOverlay{
+        
+            visibility: visible;
+        
+    }
+    #portfolioProjects a:hover{
+        background-color: $main;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+
     #aboutHeader{
         height: 50vh;
-       
     }
+
     #home-about p{
-    @include secondFont('Montserrat', 400,26px);
-    margin-top: 20px;
-    margin-left: 0px;
+        @include secondFont('Montserrat', 400,26px);
+        margin-top: 20px;
+        margin-left: 0px;
     }
+
     .workTitle{
-    text-align: center;
-    margin-bottom: 30px;
+        text-align: center;
+        margin-bottom: 30px;
     }
+
     .pagination-centered h3{
         font-size: 42px;
         margin-top: 10px;
     }
+
     .repoLink{
         text-decoration: none;
         font-style: italic;
         color: $thirdColor;
     }
+
     .repoLink:visited{
         text-decoration: none;
         color: $thirdColor;
     }
+
     #myProjects p{
      @include secondFont('Montserrat', 400, 18px);   
     }
+
     .img-circle-about{
         width: 300px;
         height: 300px;
@@ -660,16 +694,30 @@ footer{
     }
   
    .form-group input, .form-group textarea{
-        width: 500px;
+        width: 600px;
         justify-content: center;
    }
-   .msgBtn{
-       background-color: $thirdColor;
-       color: $fontColor;
-       @include secondFont('Bungee', 400, 18px);
-       text-align: center;
+
+   .form-group textarea{
+       height: 300px;
    }
-   
+
+   .msgBtn{
+        background-color: $thirdColor;
+        color: $fontColor;
+        @include secondFont('Bungee', 400, 18px);
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        margin: 0 auto;
+       @include borderRad(8px);
+   }
+
+   .msgBtn:hover{
+        background-color: $secondaryColor;
+        color: $main;
+        text-decoration: none;
+   }
   
     .projectImg-right{
         height: 310px;
@@ -722,13 +770,19 @@ footer{
         font-size: 22px;
     }
 
-    ul{
+    ul {
         font-size: 26px;
-        text-align: left;
         color: $fontColor;
         visibility: hidden;
-    }
+        list-style: none;
 
+       
+    }
+    li{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -50px;
+    }
     .tools:hover, .server:hover, .languages:hover{
         ul{
             visibility: visible;
@@ -740,7 +794,8 @@ footer{
     }
     
     .skills{
-        text-align: center;
+        
+        width: 370px;
     }
  
     #about img{
@@ -769,10 +824,10 @@ footer{
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
     }
-
-    .contact-form{
-       margin: auto;
-       display: block;
-   }
-
+    form{
+        margin-top: 150px;
+        margin-left: 50px;
+        width: 600px
+    }
+    
 }
