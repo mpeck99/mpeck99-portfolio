@@ -201,8 +201,9 @@ footer{
     }
     //about information
     #home-about p{
-        font-size: 14px;
+        font-size: 12px;
         text-align: justify;
+        padding: 10px;
     }
     #aboutHeader h3, #about h1 {
         text-align: center;
@@ -253,13 +254,15 @@ footer{
 {
     //logo
     #mp{
-        width: 500px;
-        margin: 0 auto !important;
-
+        width: 400px;
+        text-align: center;
     }
     //header info
     .myquote, .socialMedia, .downArrow{
         visibility: hidden;
+    }
+    header{
+       height: 50vh;
     }
   //layout
     .col-4{
@@ -283,6 +286,8 @@ footer{
         background-color: transparent;
         border: none;
         color: transparent;
+        height: 100px;
+        width: 100px;
     } 
     .opened{
         background-color: rgba(208, 104, 104, 8);
@@ -322,6 +327,8 @@ footer{
     } 
     .hamburgerMenu{
         visibility: visible;
+        width: 100px;
+        margin: 10px;
         
    }
     //portfolio

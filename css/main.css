@@ -165,8 +165,9 @@ footer {
     width: 150px;
     text-align: center; }
   #home-about p {
-    font-size: 14px;
-    text-align: justify; }
+    font-size: 12px;
+    text-align: justify;
+    padding: 10px; }
   #aboutHeader h3, #about h1 {
     text-align: center; }
   #aboutLogo {
@@ -202,10 +203,12 @@ footer {
 
 @media screen and (min-width: 429px) and (max-width: 768px) {
   #mp {
-    width: 500px;
-    margin: 0 auto !important; }
+    width: 400px;
+    text-align: center; }
   .myquote, .socialMedia, .downArrow {
     visibility: hidden; }
+  header {
+    height: 50vh; }
   .col-4 {
     height: 0; }
   .container {
@@ -220,7 +223,9 @@ footer {
     float: right;
     background-color: transparent;
     border: none;
-    color: transparent; }
+    color: transparent;
+    height: 100px;
+    width: 100px; }
   .opened {
     background-color: #d06868;
     width: 100vw;
@@ -251,7 +256,9 @@ footer {
     text-decoration: none;
     width: 10%; }
   .hamburgerMenu {
-    visibility: visible; }
+    visibility: visible;
+    width: 100px;
+    margin: 10px; }
   #portfolioProjects h1, #home-about h1 {
     font-size: 28px;
     text-align: center; }
