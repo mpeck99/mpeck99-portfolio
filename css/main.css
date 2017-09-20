@@ -67,7 +67,8 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .logo, #mp {
     width: 300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 2vh; }
   .myquote, .socialMedia, .downArrow {
     visibility: hidden; }
   header {
