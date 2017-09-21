@@ -27,12 +27,23 @@
   padding-left: 0;
   padding-right: 0; }
 
+ol.carousel-indicators li {
+  background-color: #19c2bc; }
+
+ol.carousel-indicators li.active {
+  background-color: #d06868; }
+
 #home-about {
   height: 100vh; }
 
 .socialMedia, .socialMediaContact {
   margin: 50px;
   width: 50px; }
+
+.myWork a:hover {
+  background-color: #d06868;
+  color: #36413e;
+  text-decoration: none; }
 
 .body {
   background-color: #36413e;
@@ -57,10 +68,7 @@ footer {
 .row h1 {
   width: 100%; }
 
-.mywork {
-  text-align: center; }
-
-#portfolioProjects a {
+.myWork a {
   margin: 0 auto;
   height: 75px;
   padding: 10px;
@@ -68,11 +76,12 @@ footer {
   font-weight: 400;
   font-size: 34px;
   border-radius: 15px;
-  color: #36413e;
+  color: #d06868;
   background-color: #19c2bc;
   text-decoration: none;
   margin-top: 20px;
-  width: 100%; }
+  width: 300px;
+  text-align: center; }
 
 #portfolioProjects {
   margin: 0 auto !important;
@@ -477,10 +486,6 @@ footer {
     visibility: hidden; }
   #portfolioProjects img:hover .projectOverlay {
     visibility: visible; }
-  #portfolioProjects a:hover {
-    background-color: #36413e;
-    color: #19c2bc;
-    text-decoration: none; }
   #aboutHeader {
     height: 50vh; }
   #home-about p {

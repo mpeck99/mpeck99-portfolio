@@ -15,12 +15,23 @@
     padding-right: 0;
 
 }
+ol.carousel-indicators li{
+    background-color: $secondaryColor;
+}
+ol.carousel-indicators li.active{
+    background-color: $thirdColor;
+}
 #home-about{
     height: 100vh;
 }
 .socialMedia, .socialMediaContact{
     margin: 50px;
     width: 50px;
+}
+.myWork a:hover{
+    background-color: $thirdColor;
+    color: $main;
+    text-decoration: none;
 }
  .body{
         background-color: $main;
@@ -44,21 +55,19 @@ footer{
        width: 100%;
 
    }
-   .mywork{
-       text-align: center;
-   }
-    #portfolioProjects a{
+
+    .myWork a{
         margin: 0 auto;
         height: 75px;
         padding: 10px;
         @include secondFont('Bungee', 400, 34px);
         @include borderRad(15px);
-        color: $main;
+        color: $thirdColor;
         background-color: $secondaryColor;
         text-decoration: none;
         margin-top: 20px;
-        width: 100%;
-
+        width: 300px;
+        text-align: center;
     }
 
     #portfolioProjects{
@@ -651,11 +660,6 @@ footer{
 
             visibility: visible;
 
-    }
-    #portfolioProjects a:hover{
-        background-color: $main;
-        color: $secondaryColor;
-        text-decoration: none;
     }
 
     #aboutHeader{
