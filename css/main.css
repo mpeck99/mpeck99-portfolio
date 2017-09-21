@@ -14,6 +14,26 @@
   40%, 60% {
     transform: translateY(0px); } }
 
+.carousel-control-prev, .carousel-control-next {
+  margin: auto 0 !important;
+  width: 75px !important; }
+
+.carousel-item img {
+  border-radius: 10px; }
+
+#portfolioProjects, #home-about {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0; }
+
+#home-about {
+  height: 100vh; }
+
+.socialMedia, .socialMediaContact {
+  margin: 50px;
+  width: 50px; }
+
 .body {
   background-color: #36413e;
   color: #e1e1e4;
@@ -51,12 +71,13 @@ footer {
   color: #36413e;
   background-color: #19c2bc;
   text-decoration: none;
-  margin-top: 20px; }
+  margin-top: 20px;
+  width: 100%; }
 
 #portfolioProjects {
-  background-color: #d06868;
-  margin: 0px;
-  padding: 0px; }
+  margin: 0 auto !important;
+  padding: 0px;
+  width: 100%; }
 
 @keyframes spin {
   from {
@@ -392,7 +413,7 @@ footer {
   .nav a {
     font-family: 'Bungee', cursive;
     font-size: 28px;
-    margin: 10px 50px;
+    margin: 30px 60px;
     color: #e1e1e4; }
   .nav a:hover {
     text-decoration: none;
@@ -402,25 +423,18 @@ footer {
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: ease-in-out; }
-  .socialMedia, .socialMediaContact {
-    margin: 50px;
-    width: 50px; }
   .img-circle, .img-circle-contact {
     width: 400px;
     height: 400px;
     border-radius: 50%; }
   #mp {
     width: 500px;
-    margin-top: 0px; }
+    margin-top: 20px; }
   #portfolioProjects {
     margin: 10px; }
   #portfolioProjects h1, #home-about h1 {
     margin-bottom: 100px;
     padding-top: 100px; }
-  .projectImg {
-    height: 310px;
-    float: left;
-    margin-top: 10px; }
   #myProjects h2, #myProjects p {
     float: right;
     width: 575px; }
@@ -435,10 +449,6 @@ footer {
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-iteration-count: infinite; }
-  #portfolioProjects, #home-about {
-    height: 100vh;
-    padding-left: 0;
-    padding-right: 0; }
   #projectInfo, .logo {
     text-align: center;
     margin: 0 auto; }
@@ -460,8 +470,6 @@ footer {
     margin: -100px; }
   .projectTitle {
     color: #19c2bc; }
-  #portfolioProjects img {
-    border-radius: 10px; }
   #portfolioProjects h2 {
     text-align: center;
     font-size: 26px; }
@@ -572,7 +580,8 @@ footer {
   .tools ul {
     color: #36413e; }
   .skills {
-    width: 370px; }
+    width: 370px;
+    text-align: center; }
   #about img {
     float: right; }
   #about {
