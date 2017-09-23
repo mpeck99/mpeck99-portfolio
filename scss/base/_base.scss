@@ -3,8 +3,13 @@
 .carousel-control-prev, .carousel-control-next{
     margin: auto 0 !important;
     width: 75px !important;
+    height: 50px;
+    background-color: $secondaryColor;
+    color: $main;
 }
-
+.nav a.active{
+    color: $thirdColor;
+}
 .carousel-item img{
     @include borderRad(10px); 
 }
@@ -15,8 +20,14 @@
     padding-right: 0;
 
 }
+.img-circle, .img-circle-contact{
+    width: 400px;
+    height: 400px;
+    @include borderRad(50%);
+}
 ol.carousel-indicators li{
     background-color: $secondaryColor;
+    
 }
 ol.carousel-indicators li.active{
     background-color: $thirdColor;
@@ -85,17 +96,17 @@ footer{
 @media screen and (min-width:320px) and (max-width: 425px)
 {
     //logo
-    .logo , #mp{
-        width: 300px;
+     #mp{
+        width: 200px;
         margin: 0 auto;
-        margin-top: 2vh;
+       float: right;
     }
     //header info
     .myquote, .socialMedia, .downArrow{
         visibility: hidden;
     }
     header{
-        height: 50vh;
+        height: 50px;
     }
     //layout information
     .col-4{
@@ -121,7 +132,8 @@ footer{
         width:100vw;
         height: 100vw;
         transition: .5s;
-
+        background-color: rgba(208, 104, 104,1);
+        
     }
 
     .overlay-content{
@@ -131,18 +143,18 @@ footer{
         text-decoration: none;
 
     }
-
      .opened a{
-        color: $fontColor;
+        color: $main;
         @include secondFont('Bungee', 400, 18px);
         margin: 20px;
         justify-content: center;
         height: 100%;
         width:100%;
         text-decoration: none;
-        //position: absolute;
+        position: relative;
         display: flex;
         direction: column;
+        z-index: 1;
     }
 
     .overlay{
@@ -196,11 +208,11 @@ footer{
     }
 
     #portfolioProjects {
-        background-color: $thirdColor;
+       // background-color: $thirdColor;
         width: 100%;
        // margin-bottom: 75px;
         margin: 0 auto;
-        height: 650px;
+        //height: 650px;
         text-align: center;
     }
 
@@ -293,6 +305,13 @@ footer{
        width: 275px;
        margin: 10px;
    }
+   .myWork a{
+       font-size: 22px;
+       width: 200px;
+       text-align: center;
+       height: auto;
+   }
+
 }
 //tablet
 @media screen and(min-width: 428px) and (max-width: 768px)
@@ -300,18 +319,17 @@ footer{
     //logo
     #mp{
         width: 400px;
-        text-align: center;
+        float: right;
     }
     .logo{
         text-align: center;
-        margin-top: 100px;
     }
     //header info
     .myquote, .socialMedia, .downArrow{
         visibility: hidden;
     }
     header{
-       height: 50vh;
+       height: 200px;
     }
   //layout
 
@@ -392,17 +410,17 @@ footer{
     }
 
     #portfolioProjects a{
-        height: 40px;
+       // height: 40px;
         margin: 0 auto;
         font-size: 22px;
         text-align: center;
-        padding: 4px;
+       // padding: 4px;
     }
     #portfolioProjects {
-        background-color: $thirdColor;
+        //background-color: $thirdColor;
         width: 100%;
         margin: 0 auto;
-        height: 975px;
+       // height: 975px;
         text-align: center;
     }
     button{
@@ -457,7 +475,7 @@ footer{
     }
 
     .form-group{
-        width: 600px;
+        width: 500px;
     }
 
 
@@ -550,10 +568,6 @@ footer{
        visibility: hidden;
    }
 
-    nav .active{
-        color: $thirdColor;
-
-    }
    .nav a{
         @include navFont;
         font-size: 28px;
@@ -575,11 +589,7 @@ footer{
 
 
 
-    .img-circle, .img-circle-contact{
-        width: 400px;
-        height: 400px;
-        @include borderRad(50%);
-    }
+    
     #mp{
         width: 500px;
         margin-top: 20px;
@@ -842,5 +852,6 @@ footer{
         margin-left: 50px;
         width: 600px
     }
+    
 
 }

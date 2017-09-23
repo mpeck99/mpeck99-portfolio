@@ -1,6 +1,5 @@
 $('.carousel').carousel();
 var left=document.querySelector('.carousel-control-prev');
-left.cli
 $('.carousel-control-prev').click(function(){
    $('#portfolioProjects').carousel('prev');
 
