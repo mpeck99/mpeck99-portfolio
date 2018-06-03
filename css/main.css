@@ -1,3 +1,9 @@
+.body {
+  background-color: #F1F0E8;
+  color: #e1e1e4;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px; }
 @font-face {
   font-family: 'Bungee, cursive';
   src: local("Bungee, cursive"), url("https://fonts.googleapis.com/css?family=Bungee"); }
@@ -223,6 +229,12 @@ footer {
   #aboutLogo {
     width: 300px;
     margin-top: 20px; }
+  .body {
+    background-color: #F1F0E8;
+    color: #353830;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px; }
   ul {
     text-align: left;
     font-family: "Montserrat";
@@ -262,7 +274,7 @@ footer {
     text-align: center;
     height: auto; } }
 
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   #mp {
     width: 400px;
     float: right; }
@@ -412,10 +424,10 @@ footer {
     font-size: 18px;
     text-align: center; } }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 768px) {
   .body {
     background-color: #F1F0E8;
-    color: #e1e1e4;
+    color: #353830;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 18px; }
@@ -443,7 +455,9 @@ footer {
   .socialMedia:hover {
     animation-name: spin;
     animation-duration: 1s;
-    animation-timing-function: ease-in-out; }
+    animation-timing-function: ease-in-out;
+    color: #5BB12F
+  }
   #mp {
     width: 500px;
     margin-top: 20px; }
@@ -462,6 +476,8 @@ footer {
   .downArrow {
     width: 200px;
     height: 200px;
+    margin-top: 20px !important;
+    color: #BCCF02 !important;
     animation-name: downbounce;
     animation-duration: 3s;
     animation-timing-function: ease;
