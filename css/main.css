@@ -22,7 +22,7 @@
   color: #36413e; }
 
 .nav a.active {
-  color: #d06868; }
+  color: #9B539C; }
 
 .carousel-item img {
   border-radius: 10px; }
@@ -49,7 +49,9 @@ ol.carousel-indicators li.active {
 
 .socialMedia, .socialMediaContact {
   margin: 50px;
-  width: 50px; }
+  width: 50px;
+  color: #9B539C;
+}
 
 .myWork a:hover {
   background-color: #d06868;
@@ -412,7 +414,7 @@ footer {
 
 @media screen and (min-width: 993px) {
   .body {
-    background-color: #36413e;
+    background-color: #F1F0E8;
     color: #e1e1e4;
     font-family: "Montserrat";
     font-weight: 400;
@@ -433,10 +435,10 @@ footer {
     font-family: 'Bungee', cursive;
     font-size: 28px;
     margin: 30px 60px;
-    color: #e1e1e4; }
+    color: #EB65A0; }
   .nav a:hover {
     text-decoration: none;
-    color: #19c2bc;
+    color: #73C5E1;
     transform: translateY(-10px); }
   .socialMedia:hover {
     animation-name: spin;
@@ -611,4 +613,5 @@ footer {
   form {
     margin-top: 150px;
     margin-left: 50px;
-    width: 600px; } }
+    width: 600px; }
+}

@@ -1,4 +1,4 @@
-@import 'utils/vars';
+@import '../utils/_vars.scss';
 
 .carousel-control-prev, .carousel-control-next{
     margin: auto 0 !important;
@@ -11,7 +11,7 @@
     color: $thirdColor;
 }
 .carousel-item img{
-    @include borderRad(10px); 
+    @include borderRad(10px);
 }
 #portfolioProjects, #home-about{
     width: 100%;
@@ -27,7 +27,7 @@
 }
 ol.carousel-indicators li{
     background-color: $secondaryColor;
-    
+
 }
 ol.carousel-indicators li.active{
     background-color: $thirdColor;
@@ -133,7 +133,7 @@ footer{
         height: 100vw;
         transition: .5s;
         background-color: rgba(208, 104, 104,1);
-        
+
     }
 
     .overlay-content{
@@ -589,7 +589,7 @@ footer{
 
 
 
-    
+
     #mp{
         width: 500px;
         margin-top: 20px;
@@ -604,7 +604,7 @@ footer{
         padding-top: 100px;
 
     }
-   
+
     #myProjects h2, #myProjects p{
         float: right;
         width: 575px;
@@ -634,7 +634,7 @@ footer{
 
     }
 
-    #portfolioProjects h1, #home-about h1, {
+    #portfolioProjects h1, #home-about h1{
         text-align: center;
         margin-bottom: 100px;
         @include secondFont('Bungee', 400, 48px);
@@ -678,8 +678,8 @@ footer{
 
     #home-about p{
         @include secondFont('Montserrat', 400,26px);
-        margin-top: 20px;
-        margin-left: 0px;
+        margin: 20px 0 0 0;
+        //margin-left: 0px;
     }
 
     .workTitle{
@@ -780,14 +780,14 @@ footer{
         height: 370px;
         width: 370px;
         border-radius: 25px;
-        margin-bottom: 20px;
+       // margin-bottom: 20px;
         margin: 0 auto;
     }
 
     #about p{
-        margin-top: 20px;
+       // margin-top: 20px;
         width: 500px;
-        margin: 10 auto;
+        margin: 10px auto;
         display: block;
         font-size: 22px;
     }
@@ -852,6 +852,6 @@ footer{
         margin-left: 50px;
         width: 600px
     }
-    
+
 
 }

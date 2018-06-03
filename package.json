@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/mpeck99/Portfolio#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "handlebars": "^4.0.11"
   },
   "dependencies": {
     "browser-sync": "^2.18.13",
