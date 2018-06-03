@@ -450,7 +450,7 @@ footer {
     color: #EB65A0; }
   .nav a:hover {
     text-decoration: none;
-    color: #73C5E1;
+    color: #BCCF02;
     transform: translateY(-10px); }
   .socialMedia:hover {
     animation-name: spin;
@@ -477,7 +477,7 @@ footer {
     width: 200px;
     height: 200px;
     margin-top: 20px !important;
-    color: #BCCF02 !important;
+    color: #73C5E1 !important;
     animation-name: downbounce;
     animation-duration: 3s;
     animation-timing-function: ease;
