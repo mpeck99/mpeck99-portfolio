@@ -259,6 +259,7 @@ li {
   border-radius: 25px;
   margin: 20px auto;
 }
+
 /* Contact Page */
 
 #contact .socialMedia {
@@ -323,15 +324,18 @@ form {
   width: 100%;
   margin: 0 auto;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+}
 
 .img-circle, .img-circle-contact {
   width: 400px;
   height: 400px;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 #home-about {
-  height: 100vh; }
+  height: 100vh;
+}
 
 .socialMedia, .socialMediaContact {
   margin: 50px;
@@ -342,7 +346,9 @@ form {
 .myWork a:hover {
   background-color: #d06868;
   color: #36413e;
-  text-decoration: none; }
+  text-decoration: none;
+}
+
 /* Footer Styling  */
 
 footer {
@@ -406,5 +412,212 @@ footer p {
   }
   40%, 60% {
     transform: translateY(0px);
+  }
+}
+
+/* Screen Sizes */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+  #mp {
+    width: 400px;
+    float: right;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .myquote, .socialMedia, .downArrow {
+    visibility: hidden;
+  }
+
+  header {
+    height: 200px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .col-md-6 {
+    text-align: center;
+  }
+  nav a {
+    visibility: hidden;
+  }
+
+  button {
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+  }
+
+  .opened {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    height: 100vh;
+  }
+
+  .overlay {
+    width: 0;
+    height: 0;
+    float: left;
+    margin: 10px;
+  }
+
+
+  .overlay a {
+    visibility: hidden;
+  }
+
+  .opened a {
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+  }
+
+  .hamburgerMenu {
+    visibility: visible;
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+  }
+
+  #portfolioProjects h1, #home-about h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #portfolioProjects h2 {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  #portfolioProjects a {
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #portfolioProjects {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  button {
+    float: left; }
+
+  #myProjects {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .img-circle {
+    height: 250px;
+    margin: 0 auto;
+    width: 250px;
+    float: right;
+  }
+
+  .img-circle-contact {
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  img.email, img.phone {
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .socialMediaContact {
+    visibility: visible;
+    width: 50px;
+    margin: 20px;
+  }
+
+  #portfolioProjects img, #myProjects img {
+    height: 250px;
+    border-radius: 10px;
+    margin: 0 auto !important;
+    width: 250px;
+  }
+
+  #contact h1 {
+    text-align: center;
+  }
+
+  .form-group {
+    width: 500px;
+  }
+
+  #home-about p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  #aboutHeader h3, #about h1 {
+    text-align: center;
+  }
+
+  #aboutLogo {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  ul {
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  .skills {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .skills p {
+    font-size: 18px;
+  }
+
+  .skills h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #contact p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .msgBtn {
+    font-size: 18px;
   }
 }
