@@ -203,7 +203,9 @@ footer p {
         height: 250px;
         border-radius: 50%;
         margin: 0 auto;
-        width: 250px; }
+        width: 250px;
+        box-shadow: 0 0 8px 8px white inset;
+    }
     img.email, img.phone {
         width: 50px;
         margin: 10px;
